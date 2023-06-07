@@ -19,7 +19,7 @@ def login(request, *args, **kwargs):
                 user_data = UserSerializer(instance)
                 return Response(user_data.data)
             else:
-                return Response({"Response":"Email / Password is Wrong"})
+                return Response({"Response":"Email / Password is Wrong",'Success':False})
         else:
             return Response({"response":"No Account Please Sign Up"})
 @api_view(["POST"])

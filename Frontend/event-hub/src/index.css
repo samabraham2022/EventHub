@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family:cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./Assets/bg.jpg');
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Login_Container {
+  display:flex;
+  position: absolute;
+  height: 75vh;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  content: "";
+  clear: both;
+
+}
+.column {
+  
+  flex: 50%;
+}
+.right{
+  border-left: 1px solid white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.left{
+  text-align: center;
+  padding-top: 4%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: url('./Assets/login_bg_left.jpg');
+  background-size: cover;
+}
+circle,
+rect,
+line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+#login_left_img{
+  align-items: center;
+  width: 20vw;
+  height:50vh;
+}

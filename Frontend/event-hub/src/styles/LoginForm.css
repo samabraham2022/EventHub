@@ -1,0 +1,26 @@
+#Email{
+  width:20vw;
+}
+#Password{
+  width:20vw;
+  
+}
+h1{
+  font-weight: lighter;
+}
+form{
+  margin-top:10%;
+  padding-left: 15%;
+  text-align: center;
+}
+#Button{
+  margin-top: 4%;
+}
+a{
+  text-decoration: none;
+}
+form h6{
+  font-weight: lighter;
+  font-size: 1vw;
+  color:red;
+}
