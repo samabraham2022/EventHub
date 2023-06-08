@@ -98,11 +98,8 @@ def RegisteredEvents(request, *args, **kwargs):
     if EventsList:
         data = EventRegisterSerializer(EventsList,many=True).data
         EventList = [dataitem['Event_id'] for dataitem in data]
-        print(EventList)
         EventData = Event.objects.all().filter(Event_id__in = EventList)
-        print(EventData)
         FinalData = EventSerializer(EventData,many=True).data
-        print(FinalData)
         return Response(FinalData)
     else:
         return JsonResponse({"Response": "No Events Registered","Success": False})

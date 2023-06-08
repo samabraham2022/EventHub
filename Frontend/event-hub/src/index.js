@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import HomePage from './Pages/HomePage'
 import App from './App';
+import RegisteredEvents from './Pages/RegisteredEvents';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 const router = new createBrowserRouter([
@@ -13,6 +14,10 @@ const router = new createBrowserRouter([
   {
     path:'/Homepage',
     element:<HomePage/>
+  },
+  {
+    path:'/My_Events',
+    element:<RegisteredEvents/>
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
